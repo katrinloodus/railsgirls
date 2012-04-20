@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Sinu nimi:</b>
+  <%= @comment.user_name %>
+</p>
+
+<p>
+  <b>Sinu sõnum:</b>
+  <%= @comment.body %>
+</p>
+
+<p>
+  <b>Idee:</b>
+  <%= @comment.idea_id %>
+</p>
+
+
+<%= link_to 'Muuda', edit_comment_path(@comment) %> |
+<%= link_to 'Tagasi', comments_path %>
